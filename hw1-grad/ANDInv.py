@@ -24,7 +24,7 @@ import gd2 as gd
 import numpy as np
 from numpy.linalg import norm, inv
     
-A = np.array([[0, 1, 1], 
+A = np.array([[0.0, 1, 1], 
              [1, 0, 1], 
              [1, 1, 1]])
 A1 = inv(A)

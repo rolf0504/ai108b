@@ -27,7 +27,7 @@ step = 0.01
 gd = gradientDescend(p, deriSig, step, epochs)
 print(gd)
 
-t = np.arange(-5.5, 5.5, 0.01)
+t = np.arange(-10, 10, 0.01)
 plt.plot(t, deriSig(t), c = 'b')
 plt.plot(gd, deriSig(gd), c = 'r', label = 'step = {}'.format(step))
 plt.scatter(gd, deriSig(gd), c = 'r')
