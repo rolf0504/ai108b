@@ -22,7 +22,7 @@ def gradientDescend(p0, grad, step, epochs):
     return np.array(gd)
 
 p = 0
-epochs = 1000000
+epochs = 100
 step = 0.01
 gd = gradientDescend(p, deriSig, step, epochs)
 print(gd)
