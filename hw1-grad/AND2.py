@@ -27,9 +27,9 @@ inputArr = np.array([[0, 0, 1],
              [1, 0, 1], 
              [1, 1, 1]])
 B = np.dot(inputArr, p)
-print("\nInputs: \n{}".format(inputArr))
-print("A dot p = {}".format(B))
-print("sig(B) = {}".format(sig(B)))
+print("Inputs: \n{}".format(inputArr))
+print("\u03A3(inputs⋅p) = {}".format(B))
+print("sig(\u03A3) = {}".format(sig(B)))
 
 ans = []
 for i in B:
