@@ -22,13 +22,16 @@ print("\n=======================================================================
 
 print("p = {}".format(p))
 
-inputArr = np.array([[0, 0, 1], 
-             [0, 1, 1],
-             [1, 0, 1], 
-             [1, 1, 1]])
-B = np.dot(inputArr, p)
+weights = np.array([p[0], p[1]])
+bias = p[2]
+
+inputArr = np.array([[0, 0], 
+             [0, 1],
+             [1, 0], 
+             [1, 1]])
+B = np.dot(inputArr, weights) + bias
 print("Inputs: \n{}".format(inputArr))
-print("\u03A3(inputs⋅p) = {}".format(B))
+print("\u03A3(in⋅w) + b = {}".format(B))
 print("sig(\u03A3) = {}".format(sig(B)))
 
 ans = []
@@ -38,12 +41,9 @@ for i in B:
 print("Output = {}".format(ans))
 print("\n==================================================================================\n")
 
-print("[w1, w2, b] = {}".format(p))
+print("weights: {}".format(weights))
+print("bias: {}".format(bias))
 
-X = p.copy()
-for i in range(len(p)):
-    X[i] = round(p[i])
-print("\nRounded weights & bias: {}".format(X))
 print("--------------------------------")
 
 print("\tInputs  |  Outputs")
