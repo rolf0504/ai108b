@@ -24,7 +24,6 @@ def dfs(array, start, goal):
         
         cNode = stack.pop()
         mapStats[cNode[0]][cNode[1]] = 2
-
         printMap(mapStats)
 
         if np.array_equal(cNode, goal):
@@ -32,6 +31,7 @@ def dfs(array, start, goal):
 
         for i in range(len(neighbors)):
             nNode = cNode + neighbors[i]
+
             v0 = nmap[nNode[0]][nNode[1]] == 0
             v1 = mapStats[nNode[0]][nNode[1]] == 0
             if v0 and v1:
