@@ -28,7 +28,7 @@ def dfs(array, start, goal):
         if np.array_equal(cNode, goal):
             return
 
-        for i in range(8):
+        for i in range(len(neighbors)):
             nNode = cNode + neighbors[i]
             if nmap[nNode[0]][nNode[1]] == 0 and mapStats[nNode[0]][nNode[1]] == 0:
                 stack.append(nNode)
