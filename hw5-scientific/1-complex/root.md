@@ -13,7 +13,7 @@ simp(x) is used to simplifying a square root
 
 First,  make a prime factorization
 Assumes that our number can be factorized under the prime numbers below:
-primes = [2, 3, 5, 7, 11, 13]
+\nprimes = [2, 3, 5, 7, 11, 13]
 Then makes a list to store factors and we can do the factorization
 ```py
 primes = [2, 3, 5, 7, 11, 13]
