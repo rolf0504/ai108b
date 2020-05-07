@@ -30,7 +30,7 @@ for i in primes:
 \
 Second, do the factorization\
 fetch every 2 numbers and multiply into cons if they are equivalent\
-and the rest numbers which was not been fetched will be left in radical
+and the rest numbers was not been fetched will be left in radical
 ```py
 cons = 1
 rs = 1
