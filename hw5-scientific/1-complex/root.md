@@ -11,9 +11,9 @@ simp(x) is used to simplifying a square root
 ```
 ```
 
-First,  make a prime factorization
+First,  make a prime factorization\
 Assumes that our number can be factorized under the prime numbers below:\
-primes = [2, 3, 5, 7, 11, 13]
+primes = [2, 3, 5, 7, 11, 13]\
 Then makes a list to store factors and we can do the factorization
 ```py
 primes = [2, 3, 5, 7, 11, 13]
@@ -28,8 +28,8 @@ for i in primes:
             factors.append(i)
 ```
 
-Second, do the factorization
-fetch every 2 numbers and multiply into cons if they are equivalent
+Second, do the factorization\
+fetch every 2 numbers and multiply into cons if they are equivalent\
 and the rest numbers which was not been fetched will be left in radical
 ```py
 cons = 1
@@ -51,16 +51,16 @@ For the variable t is the number calculated after discriminant quadratic formula
 ```
 ```
 
-First, makes t positive so it can be factorized easier
+First, makes t positive so it can be factorized easier\
 after simp(t) we get a radical constant and a surd
 ```py
 t *= -1
 cons, rs = simp(t)
 ```
 
-Second, generates the answer
-because t is already smaller than 0 so we know that the root is definitely a complex number
-there we add i as the imaginary number in complex number
+Second, generates the answer\
+because t is already smaller than 0 so we know that the root is definitely a complex number\
+there we add i as the imaginary number in complex number\
 then it returns the root
 ```py
 ans1 = '(' + str(-b) + '+' + str(cons) + 'i*' + str(rs) + '^(1/2))/' + str(2*a)
