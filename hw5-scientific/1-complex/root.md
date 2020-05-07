@@ -47,7 +47,7 @@ for i in factors:
 ```
 
 ## If the roots are complex numbers
-For the variable t is the number calculated after discriminant quadratic formula: $b^2$−4ac
+For the variable t is the number calculated after discriminant quadratic formula: $b^{2}−4ac$
 ```
 ```
 
