@@ -10,7 +10,7 @@ root of 1x^2+2x+3=  ('(-2+2i*2^(1/2))/2', '(-2-2i*2^(1/2))/2')
 simp(x) is used to simplifying a square root
 ```
 ```
-
+\
 First,  make a prime factorization\
 Assumes that our number can be factorized under the prime numbers below:\
 primes = [2, 3, 5, 7, 11, 13]\
@@ -27,7 +27,7 @@ for i in primes:
             x /= i
             factors.append(i)
 ```
-
+\
 Second, do the factorization\
 fetch every 2 numbers and multiply into cons if they are equivalent\
 and the rest numbers which was not been fetched will be left in radical
@@ -50,14 +50,14 @@ for i in factors:
 For the variable t is the number calculated after discriminant quadratic formula: b^2−4ac
 ```
 ```
-
+\
 First, makes t positive so it can be factorized easier\
 after simp(t) we get a radical constant and a surd
 ```py
 t *= -1
 cons, rs = simp(t)
 ```
-
+\
 Second, generates the answer\
 because t is already smaller than 0 so we know that the root is definitely a complex number\
 there we add i as the imaginary number in complex number\
