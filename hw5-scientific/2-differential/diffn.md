@@ -17,20 +17,22 @@ dftn(sin, 9 pi/4)=  0.7071067811865476
 ```
 
 ## Use function dft(f, x, sign) instead of df(f, x, h=step)
-dft(f, x, sign) is used to differentiate trigonometric function
-\but only with sin(x) and cos(x)
+dft(f, x, sign) is used to differentiate trigonometric function\
+but only with sin(x) and cos(x)
 ```
 ```
-\for the differenciation of sin(x) snd(x):
+\
+for the differenciation of sin(x) snd(x):
 ```
 sin'(x) = cos(x)
 cos'(x) = -sin(x)
 ```
-\In dft(f, x, sign), f is the corresponding function sin(x) or cos(x)
-\and sign is to determine whether the function is positive or negative
-\The function retuens 3 values:
-\answer in float, current trigonometric function type and the answer sign
-\code written in python:
+\
+In dft(f, x, sign), f is the corresponding function sin(x) or cos(x)\
+and sign is to determine whether the function is positive or negative\
+The function retuens 3 values:\
+answer in float, current trigonometric function type and the answer sign\
+code written in python:
 ```py
 def dft(f, x, sign):
     if f == sin and sign == 1:
@@ -42,8 +44,9 @@ def dft(f, x, sign):
     if f == cos and sign == -1:
         return float(sin(x)), sin, 1
 ```
-\If we want to differenciate a trigonometric function n times
-\we add a function dftn(f, x, sign, n), which makes n times differenciation
+\
+If we want to differenciate a trigonometric function n times\
+we add a function dftn(f, x, sign, n), which makes n times differenciation
 ```py
 def dftn(f, x, sign, n):
     if (n == 0): return float(sin(x)), sin, 1
