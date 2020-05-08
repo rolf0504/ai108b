@@ -1,4 +1,4 @@
-from sympy import sin, cos, pi
+from math import sin, cos, pi
 
 def dft(f, x, sign):
     if f == sin and sign == 1:
