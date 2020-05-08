@@ -6,6 +6,7 @@
 root of 1x^2+4x+0=  [0.0, -4.0]
 root of 1x^2+2x+3=  ('(-2+2i*2^(1/2))/2', '(-2-2i*2^(1/2))/2')
 ```
+
 ## Add function simp(x)
 simp(x) is used to simplifying a square root
 ```

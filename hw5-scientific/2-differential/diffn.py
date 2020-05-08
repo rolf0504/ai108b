@@ -1,15 +1,27 @@
-from math import *
+from sympy import sin, cos, pi
 
-step = 0.0001
-def df(f, x, h=step):
-    return (f(x+h)-f(x-h))/(2*h)
+def dft(f, x, sign):
+    if f == sin and sign == 1:
+        return float(cos(x)), cos, 1
+    if f == sin and sign == -1:
+        return float(-cos(x)), cos, -1
+    if f == cos and sign == 1:
+        return float(-sin(x)), sin, -1
+    if f == cos and sign == -1:
+        return float(sin(x)), sin, 1
 
-def dfn(f, x, n, h=step):
-    if (n == 0): return f(x)
-    if (n == 1): return df(f,x,h)
-    return (dfn(f, x+h, n-1) - dfn(f, x-h, n-1))/(2*h)
+def dftn(f, x, sign, n):
+    if (n == 0): return float(sin(x)), sin, 1
+    if (n == 1): return dft(f, x, sign)
 
-print('df(sin, pi/4)=', df(sin, pi/4))
+    if f == sin:
+        return dftn(cos, x, sign, n-1)
+    if f == cos:
+        return dftn(sin, x, -sign, n-1)
 
+x = pi/4
+
+print("dft(sin, pi/4)= ", dft(sin, x, 1)[0])
 for i in range(10):
-    print('dfn(sin,', i, 'pi/4)=', dfn(sin, pi/4, i))
+    ans, f, sign = dftn(sin, x, 1, i)
+    print('dftn(sin,', i, 'pi/4)= ', ans)
