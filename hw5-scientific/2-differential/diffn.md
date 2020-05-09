@@ -35,10 +35,8 @@ answer in float, current trigonometric function type and the answer sign\
 code written in python:
 ```py
 def dft(f, x, sign):
-    si = sin(x)
-    co = cos(x)
-    ans = [(co, cos, 1), (-co, cos, -1), 
-           (-si, sin, -1), (si, sin, 1)]
+    ans = [(cos(x), cos, 1), (-cos(x), cos, -1), 
+           (-sin(x), sin, -1), (sin(x), sin, 1)]
 
     if f == sin:
         return ans[0] if sign == 1 else ans[1]
