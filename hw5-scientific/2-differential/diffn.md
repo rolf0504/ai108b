@@ -35,8 +35,8 @@ answer in float, current trigonometric function type and the answer sign\
 code written in python:
 ```py
 def dft(f, x, sign):
-    si = float(sin(x))
-    co = float(cos(x))
+    si = sin(x)
+    co = cos(x)
     ans = [(co, cos, 1), (-co, cos, -1), 
            (-si, sin, -1), (si, sin, 1)]
 
@@ -52,7 +52,7 @@ we add a function dftn(f, x, sign, n), which makes n times differenciation
 ```py
 def dftn(f, x, sign, n):
     if (n == 0):
-        return float(sin(x)), sin, 1
+        return sin(x), sin, 1
 
     if (n == 1):
         return dft(f, x, sign)
