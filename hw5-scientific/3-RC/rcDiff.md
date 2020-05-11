@@ -39,7 +39,7 @@ which is:\
 and is equivalent to:\
 <img src="./img/rcAns2.png" style="border:none;">
 \
-It is the same as:
+It is the same as:\
 <img src="./img/rcRes.png" style="border:none;">
 \
 if we gave v(0) = V0
