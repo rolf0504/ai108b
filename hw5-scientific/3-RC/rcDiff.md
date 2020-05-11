@@ -41,4 +41,5 @@ and is equivalent to:\
 \
 It is the same as:
 <img src="./img/rcRes.png" style="border:none;">
+\
 if we gave v(0) = V0
