@@ -22,7 +22,7 @@ but only with sin(x) and cos(x)
 ```
 ```
 \
-for the differenciation of sin(x) snd(x):
+for the differentiation of sin(x) snd(x):
 ```
 sin'(x) = cos(x)
 cos'(x) = -sin(x)
@@ -45,8 +45,8 @@ def dft(f, x, sign):
         return ans[2] if sign == 1 else ans[3]
 ```
 \
-If we want to differenciate a trigonometric function n times\
-we add a function dftn(f, x, sign, n), which makes n times differenciation
+If we want to differentiate a trigonometric function n times\
+we add a function dftn(f, x, sign, n), which makes n times differentiation
 ```py
 def dftn(f, x, sign, n):
     if (n == 0):

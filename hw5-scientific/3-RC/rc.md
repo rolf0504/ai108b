@@ -14,7 +14,7 @@ When *t* = *RC* = *T*, *Vc* = 0.368*V0*\
 When *t* = 2*RC* = 2*T*, *Vc* = 0.135*V0*\
 When *t* = 3*RC* = 3*T*, *Vc* = 0.05*V0*\
 According to the above calculation *Vc* has dropped down to 5% when *t* = 3*T*\
-so we can assume that *Vc* = 0 when *t* >= 5*T*, which means the capacitor has fully discharged\
+so we can assume that *Vc* = 0 when *t* >= 5*T*, which means the capacitor has fully discharged
 
 ## Executed result
 ```
