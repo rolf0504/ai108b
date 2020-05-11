@@ -1,6 +1,7 @@
 # RC circuit linear differential equation solution with sympy
 Solve the equation:\
 <img src="./img/rcDiff.png" style="border:none;">
+\
 and the solution:\
 <img src="./img/rcRes.png" style="border:none;">
 
