@@ -3,7 +3,7 @@
 Solve the linear differential equation of a RC circuit:\
 <img src="./img/rcDiff.png" style="border:none;">
 \
-and the resolution:\
+and the solution:\
 <img src="./img/rcRes.png" style="border:none;">
 \
 The RC circuit looks like:\
