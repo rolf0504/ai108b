@@ -13,8 +13,8 @@ Eq(v(t), exp((C1 - t/R)/C))
 ```
 
 ## Code in python
-Construct the quation and store in *a*\
-Then solve the quation using dsolve()
+Construct the equation and store in *a*\
+Then solve the equation using dsolve()
 ```py
 from sympy import symbols, dsolve, Function
 
