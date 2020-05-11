@@ -1,4 +1,4 @@
-import math
+import math, cmath
 
 def simp(x):
     cons = 1
@@ -29,6 +29,8 @@ def simp(x):
 def root2(a,b,c):
     t = b*b - 4*a*c
     if (t < 0):
+        # t2 = cmath.sqrt(t)
+        # return [(-b+t2)/(2*a), (-b-t2)/(2*a)]
         t *= -1
         cons, rs = simp(t)
 

@@ -68,3 +68,10 @@ ans1 = '(' + str(-b) + '+' + str(cons) + 'i*' + str(rs) + '^(1/2))/' + str(2*a)
 ans2 = '(' + str(-b) + '-' + str(cons) + 'i*' + str(rs) + '^(1/2))/' + str(2*a)
 return ans1, ans2
 ```
+
+## cmath
+Or just import cmath\
+which helps handle complex numbers\
+```py
+t2 = cmath.sqrt(t)
+```
