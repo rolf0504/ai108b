@@ -9,7 +9,7 @@ and the solution:\
 ## Executed result
 v(t) = exp((C1 - t/R)/C)
 ```
-py .\rcDiff.py
+>py .\rcDiff.py
 Eq(v(t), exp((C1 - t/R)/C))
 ```
 
