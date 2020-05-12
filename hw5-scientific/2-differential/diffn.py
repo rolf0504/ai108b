@@ -1,9 +1,14 @@
 from math import sin, cos, pi
 
-def dft(f, x, sign):
-    ans = [(cos(x), cos, 1), (-cos(x), cos, -1), 
-           (-sin(x), sin, -1), (sin(x), sin, 1)]
+def df(x, h=0.0001):
+    return (x+h-x)/(h)
 
+def dft(f, x, sign):
+    c = df(x) * f(x)/sin(x) if f == sin else df(x) * f(x)/cos(x)
+
+    ans = [(c * cos(x), cos, 1), (c * -cos(x), cos, -1), 
+           (c * -sin(x), sin, -1), (c * sin(x), sin, 1)]
+    
     if f == sin:
         return ans[0] if sign == 1 else ans[1]
         

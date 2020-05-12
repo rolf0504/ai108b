@@ -71,7 +71,7 @@ return ans1, ans2
 
 ## cmath
 Or just import cmath\
-which helps handle complex numbers\
+which helps handle complex numbers
 ```py
 t2 = cmath.sqrt(t)
 ```
