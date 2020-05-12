@@ -28,7 +28,7 @@ a += v(t)/r
 print(dsolve(a, v(t)))
 ```
 \
-The code returns an eqution:\
+The code returns:
 ```
 Eq(v(t), exp((C1 - t/R)/C))
 ```
