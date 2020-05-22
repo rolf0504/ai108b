@@ -15,7 +15,7 @@ def gradientDescend(p0, grad, step, epochs):
     gd.append(p0)
     p = p0
 
-    for i in range(epochs):
+    for _ in range(epochs):
         w = p - step * deriSig(p)
         gd.append(w)
         p = w
