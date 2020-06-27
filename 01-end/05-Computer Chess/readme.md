@@ -1,4 +1,4 @@
 # Computer Chess
 
-Play chess with a computer
+Play chess with a computer\
 [back](../readme.md)
