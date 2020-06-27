@@ -9,5 +9,5 @@
 |[07-Language Processing](./07-Language%20Processing/readme.md)|
 |[08-Scientific Computing](./08-Scientific%20Computing/readme.md)|
 |[09-Pattern Recognition](./09-Pattern%20Recognition/readme.md)|
-|[10-Machine Learning](./10-Machine%20Learning/machineLearning.pdf)|
+|[10-Machine Learning](./10-Machine%20Learning/readme.md)|
 |[11-Deep Learning](./11-Deep%20Learning/readme.md)|
